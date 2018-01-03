@@ -37,4 +37,3 @@ function example()
 }
 
 var output = document.getElementById('output');
-output.innerHTML = 'new Raiford';
