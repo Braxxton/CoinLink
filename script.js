@@ -1,40 +1,46 @@
+var JSONData;
 
-var base_url = 'http://people.cs.uct.ac.za/~swatermeyer/VulaMobi/';
+function JsonLoad() {
 
-function example()
-{
-    var response = "";
-    var form_data = {
-        username: username,
-        password: password
-    };
-    $.ajax({
-        type: "POST", 
-        url: base_url + "ajax.php?test/json", 
-        data: form_data,
-        success: function(response)
-        {
-            /*response = '[{"Language":"jQuery","ID":"1"},{"Language":"C#","ID":"2"},
-                           {"Language":"PHP","ID":"3"},{"Language":"Java","ID":"4"},
-                           {"Language":"Python","ID":"5"},{"Language":"Perl","ID":"6"},
-                           {"Language":"C++","ID":"7"},{"Language":"ASP","ID":"8"},
-                           {"Language":"Ruby","ID":"9"}]'*/
-            console.log(response);
-            
-	    var json_obj = $.parseJSON(response);//parse JSON
-            
-            var output="<ul>";
-            for (var i in json_obj) 
-            {
-                output+="<li>" + json_obj[i].Language + ",  " + json_obj[i].ID + "</li>";
-            }
-            output+="</ul>";
-            
-            $('span').html(output);
-        },
-        dataType: "json"//set to JSON    
-    })    
+  $.getJSON("data.json", function(result){
+    JSONData = result;
+   console.log(JSONData);
+     
+    // $.each(result, function(i, field){
+    //     $("div").append(field + " ");
+    // });
+  });
+
 }
 
-var output = document.getElementById('output');
-output.innerHTML = 'new Raiford Braxxton, once and for al im done';
+// function loadJSON(callback) {   
+    
+//         var xobj = new XMLHttpRequest();
+//             xobj.overrideMimeType("application/json");
+//         xobj.open('GET', 'data.json', true); // Replace 'my_data' with the path to your file
+//         xobj.onreadystatechange = function () {
+//               if (xobj.readyState == 4 && xobj.status == "200") {
+//                 // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+//                 callback(xobj.responseText);
+//               }
+//         };
+//         xobj.send(null);  
+//      }
+     
+//      function init() {
+//       loadJSON(function(response) {
+//        // Parse JSON string into object
+//          var actual_JSON = JSON.parse(response);
+//       });
+//      }
+
+
+
+
+
+JsonLoad();
+
+
+$(function() {
+   $('#output').text(JSONData.firstname);
+});

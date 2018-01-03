@@ -1,0 +1,32 @@
+{
+    "pageTitle": "Bitcoin Ultimate Links",
+    "pageDescription": "The Ultimate Bitcoin Link Collection for enthusiast of the most modern and revolutionary internet technology since the invention of the Internet itself!",
+	
+
+   "groups": [
+        {
+            "name": "Group 1",
+            "iconUrl": "www.yahoo.com/images/icon.jpg",
+            "description":"group description describes this particular group",
+            "categories": [
+                {
+					"image": "images/yahooSmall.png",
+                    "name": "Category 1",
+                    "iconUrl":"www.yahoo.com",
+                    "description":"category description describes this particular category",
+                    "item": [
+                        {
+                            "title": "Yahoo",
+                            "url": "http://www.yahoo.com",
+                            "description": "Yahoo Search Engine Rocks"
+							
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+
