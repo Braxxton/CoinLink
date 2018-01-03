@@ -37,4 +37,4 @@ function example()
 }
 
 var output = document.getElementById('output');
-output.innerHTML = 'new Raiford';
+output.innerHTML = 'new Raiford Braxxton, once and for al im done';
