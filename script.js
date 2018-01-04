@@ -1,6 +1,15 @@
 var JSONData;
+var bitcoinLinks;
 
 function JsonLoad() {
+
+
+  
+  $.getJSON("bitcoinLinks.json", function(result){
+    bitcoinLinks = result;
+   console.log(bitcoinLinks);
+  });
+
 
   $.getJSON("data.json", function(result){
     JSONData = result;
@@ -43,4 +52,21 @@ JsonLoad();
 
 $(function() {
    $('#output').text(JSONData.firstname);
+
+
+
+   $('#target').loadTemplate(
+    //Specify the template container (or file name of external template)
+    $('#template'),
+
+    //Specify the data to render
+    {
+      firstname: "BRAXXTON",
+      name: "Luke",
+      power: "force"
+    }
+  );
+
+
+
 });

@@ -7,11 +7,12 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.loadtemplate/1.5.10/jquery.loadTemplate.js"></script>
   </head>
   
   <body>
         <div id="container">
-            <div id="output" name="output">Nothing Yet</div>
+            <div id="output" name="output">{firstname}</div>
         </div>
         <script src="script.js"></script>
         
@@ -27,5 +28,21 @@
       * https://reactjs.org/docs/react-without-jsx.html
       * https://reactjs.org/docs/cdn-links.html
     -->
+
+
+
+    <div id="target"></div>
+    
+    <script id="template" type="text/html">
+
+      <div id="output" data-content="firstname" name="output">NOt Assigned</div>
+      
+      <p>Use the <strong data-content="power"></strong>, <span data-content="name"></span>!</p>
+    </script>
+
+
+
   </body>
 </html>
+
+
