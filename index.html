@@ -3,42 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hello World</title>
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.loadtemplate/1.5.10/jquery.loadTemplate.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.loadtemplate/1.5.10/jquery.loadTemplate.js"></script> -->
+    <script src="jquery-loadTemplate/jquery.loadTemplate-1.4.4.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
   </head>
   
-  <body>
-        <div id="container">
-            <div id="output" name="output">{firstname}</div>
-        </div>
-        <script src="script.js"></script>
-        
-    <!--
-      Note: this page is a great way to try React but it's not suitable for production.
-      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+  <body>   
 
-      To set up a production-ready React build environment, follow these instructions:
-      * https://reactjs.org/docs/add-react-to-a-new-app.html
-      * https://reactjs.org/docs/add-react-to-an-existing-app.html
+  <h2 id="pageTitle"></h2>
+  <p id="pageDescription"></p>
 
-      You can also use React without JSX, in which case you can remove Babel:
-      * https://reactjs.org/docs/react-without-jsx.html
-      * https://reactjs.org/docs/cdn-links.html
-    -->
-
-
-
-    <div id="target"></div>
+   
+<div id="pageTarget"></div>
     
-    <script id="template" type="text/html">
-
-      <div id="output" data-content="firstname" name="output">NOt Assigned</div>
-      
-      <p>Use the <strong data-content="power"></strong>, <span data-content="name"></span>!</p>
+    <script id="pageTemplate" type="text/html">
+      <h2 data-content="pageTitle"></h2>
+      <p data-content="pageDescription"></p>
     </script>
+    
+    <div id=MyTable>
+
+    </div>
 
 
 

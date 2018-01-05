@@ -1,0 +1,45 @@
+{
+    "pageTitle": "Bitcoin Ultimate Links",
+    "pageDescription": "The Ultimate Bitcoin Link Collection for enthusiast of the most modern and revolutionary internet technology since the invention of the Internet itself!",
+	
+
+   "groups": [
+        {
+            "name": "Favorites",
+            "description":"My Favorite Cryptocurrencies",
+            "categories": [
+                {
+                    "name": "Large Cap",
+                    "description":"Cryptocurrencies that have a large market cap.",
+                    "items": [
+                        {
+                            "image": "https://i.imgur.com/67R21dX.png",
+                            "title": "Bitcoin",
+                            "url": "https://bitcoin.org/en/",
+                            "description": "Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network"
+                        },
+                        {
+                            "image": "http://files.coinmarketcap.com.s3-website-us-east-1.amazonaws.com/static/img/coins/200x200/ethereum.png",
+                            "title": "Ethereum",
+                            "url": "https://www.ethereum.org/",
+                            "description": "Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third party interference."
+                        },
+                        {
+                            "image": "http://files.coinmarketcap.com.s3-website-us-east-1.amazonaws.com/static/img/coins/200x200/ethereum.png",
+                            "title": "Dash",
+                            "url": "https://www.dash.org/",
+                            "description": "Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third party interference."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Top 10",
+            "description":"My Top 10 Cryptocurrencies"
+        }
+    ]
+}
+
+
+
